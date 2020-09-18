@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ReviewItem = (props) => {
-  console.log(props);
+  // console.log(props);
   const {name,quantity,price,key}=props.product;
   const actualPrice=(quantity*price).toFixed(2);
   const reviewItemStyle={
