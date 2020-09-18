@@ -37,6 +37,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <div className="cart-container">
+      </div>
     
     </div>
   );

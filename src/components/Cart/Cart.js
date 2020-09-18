@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
   const cart = props.cart;
-  const total=cart.reduce((total,prd)=>total+prd.price,0);
+  console.log("cart:",cart);
+  const total=cart.reduce((total,prd)=>total+(prd.price*prd.quantity),0);
   let shippingCost=0;
   if(total>40){
     shippingCost=0;
